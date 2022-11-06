@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Varela+Round&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.h-primary{
+    font-size: 35px;
+    font-weight: bolder;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-size: 24px;
+}
+
+#home p{
+    font-size: 13px;
+    padding: 10px;
+    color: rgba(43, 11, 11, 0.715);
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-fluid{
+    background-color: white;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url('images/welcome.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;    
+}
+
+.btn-home{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: black;
+    margin: 17px;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.btn-home:hover{
+    padding: 6px 20px;
+    border: 2px solid brown;
+    background-color: white;
+    color: black;
+    margin: 17px;
+    font-size: 1.2rem;
+    border-radius: 12px;
+}
+
+.center{
+    text-align: center;
+}
+
+#services{
+    margin: 34px;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+
+#services .box{
+    border: 2px solid rgba(241, 61, 6, 0.789);
+    padding: 30px;
+    margin: 3px 5px;
+    border-radius: 25px;
+    background-color: #4ddfd63c;
+}
+
+#services .box img{
+    height: 170px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p{
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#client-section{
+    height: 220px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('images/bg.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 70%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 40px;
+}
+
+.client-item img{
+    height: 124px;
+    flex-direction: column;
+}
+
+.h1, h1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+}
+
