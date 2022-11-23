@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>DrinkIT</title>
 </head>
 <link rel="stylesheet" href="style.css">
 <body>
     <section id="home">
-        <h1 class="h-primary">Welcome to our delivery website</h1>
+        <h1 class="h-primary">Welcome to DrinkIT</h1>
         <h2 class="h-secondary">Have you ever been in dire need of water or drinkables on a sunny afternoon and no nearby shops?</h2>
         <p>Now you can order a bottle of water or beverage from your location and recieve your order in a matter of minutes. Our nearest retail centre has got you covered.</p>
         <a href="order.php" target="_parent"><button class="btn-home">Shop now!</button></a>
