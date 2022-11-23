@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,9 +12,9 @@
 </head>
 <link rel="stylesheet" href="style.css">
 <body>
-<nav class="navbar navbar-expand-lg navbar-yellow bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">ICONS</a>
+    <a class="navbar-brand" href="#">DrinkIT</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -31,11 +35,25 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="about.php">About Us</a>
+        </li>
+      </ul>
+      <div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="order.php">Order</a>
         </li>
       </ul>
       <div>
-        <a href="mycart.php" class="btn btn-outline-success me-auto mb-2 mb-lg-0">My Cart (0)</a>
+        <?php
+          $count=0;
+          if(isset($_SESSION['cart']))
+          {
+            $count=count($_SESSION['cart']);
+          }
+        ?>
+        <a href="mycart.php" class="btn btn-success me-auto mb-2 mb-lg-0">My Cart (<?php echo $count; ?>) </a>
       </div>
     </div>
   </div>
