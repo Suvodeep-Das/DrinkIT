@@ -1,2 +1,3 @@
-# Icons
+# DrinkIT
+
 E-Commerce Website
